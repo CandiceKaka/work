@@ -1,0 +1,1 @@
+"use strict";var oC=document.getElementById("canvas"),oGc=oC.getContext("2d");oGc.beginPath(),oGc.arc(300,300,300,0,2*Math.PI,!0);

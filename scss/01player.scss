@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+body,html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background: -webkit-linear-gradient(left,#000,#b4b4b4,#ccc);
+}
+* {
+    box-sizing: border-box;   
+}
+i {
+    font-style: normal;
+}
+ul {
+    list-style: none;
+}
+.playStatus {
+    width: 1000px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    top: 170px;
+    .playImage {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        border-radius: 50%;
+        background: #121a2a;
+        float: left;
+        
+    }
+    .playPeople {
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+//      animation: round 4s infinite linear;
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+    }
+    .stick {
+        position: absolute;
+        top: -10px;
+        right: 0px;
+        transition: 1s;
+        transform-origin: top right;
+        transform: rotate(-30deg);
+    }
+}
+.playText {
+    width: 500px;
+    height: 400px;
+    float: right;
+    padding-top: 130px;
+    .songName {
+        font-size: 50px;
+        color: white;
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .songClass {
+        text-align: center;
+        margin-bottom: 10px;
+        span {
+            color: white;
+        }
+    }
+    .songClass span:first-child {
+        font-size: 30px;
+        margin-right: 10px;
+    }
+    .songClass span:nth-child(3) {
+        margin:0 6px 0 6px;
+    }
+    .songer~span {
+        font-size: 20px;
+    }
+}
+.playControl {
+    text-align: center;
+    height: 30px;
+    padding-left: 80px;
+    padding-right: 40px;
+    position: relative;
+    .volume {
+        height: 110px;
+        width: 4px;
+        background: #fff;
+        position: absolute;
+        top: -110px;
+        right: 60px;
+//      display: none;
+        .volumeChange {
+            display: block;
+            width: 16px;
+            height: 10px;
+            background: #CC1F25;
+            position: absolute;
+            bottom: 0px;
+            left: -6px;
+            border-radius: 6px;
+            .percent {
+                position: absolute;
+                display: none;
+                width: 33px;
+                height: 20px;
+                border: 1px solid black;
+                font-size: 12px;
+                right: -32px;
+                bottom: -4px;
+                background: white;
+            }
+        }
+        .colorVolume {
+            display: block;
+            background: #CC1F25;
+            position: absolute;
+            height: 0px;
+            bottom: 0px;
+            width: 4px;
+        }
+    }
+}
+.playControl i {
+    color: white;
+    font-size: 26px;
+    font-weight: lighter;
+}
+.playControl i:hover {
+    cursor: pointer;
+}
+.playControl p:first-child {
+    float: left;
+}
+.playControl p:nth-of-type(2) {
+    float: right;
+    i {
+        margin-right: 6px;
+    }
+}
+
+.songsList {
+    width: 800px;
+    height: 80px;
+    position: relative;
+    margin: 0 auto;
+    top: 300px;
+    ul {
+        text-align: center;
+        li {
+            background: #CCCCCC;
+            float: left;
+            height: 80px;
+            width: 190px;
+            border-radius: 8px;
+            color: white;
+            margin-right: 10px;
+            h3 {
+                height: 40px;
+                text-align: center;
+                font-size: 30px;
+                font-weight: normal;
+                background: rgba(255,255,255,0.5);
+                border-radius:8px 8px 0px 0px;
+            }
+            span {
+                display: block;
+                padding-top: 10px;
+            }
+            
+        }
+        li:hover {
+            cursor: pointer;
+            background: #D51B1E;
+        }
+    }
+}
+
+.playTime {
+    width: 500px;
+    height: 50px;
+    padding-left: 20px;
+    .timeNum {
+        width: 100px;
+        height: 20px;
+        float: left;
+        margin-top: 14px;
+        font-size: 14px;
+        color: white;
+    }
+    .timeLine {
+        width: 300px;
+        height: 10px;
+        background: #CC1F25;
+        float: right;
+        margin-top: 20px;
+        cursor: pointer;
+        .colorTimeLine {
+            height: 10px;
+            position: absolute;
+            background: white;
+        }
+    }
+}
+
+
+//头像转动
+@keyframes round {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

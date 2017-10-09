@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>音乐播放器</title>
+		<link href="css/01player.css" rel="stylesheet" />
+		<link href="css/iconfont.css" rel="stylesheet" />
+		<link href="css/jquery-ui.css" rel="stylesheet" />
+		<script data-main="./js/01player.js" src="./js/require.js"></script>
+	</head>
+	<body>
+		<div class="playStatus">
+			<div class="playImage">
+				<div class="playPeople">
+					<img src="img/vae3.jpg" />
+				</div>
+				<div class="stick">
+					<img src="img/cd_tou.png"/>
+				</div>
+			</div>
+			<div class="playText">
+				<h2 class="songName">浅唱</h2>
+				<p class="songClass"><span class="songer">许嵩</span><span>专辑</span><span>:</span><span class="songClass">Vae珍藏合集</span></p>
+				<div class="playControl">
+					<p>
+						<i class="iconfont icon-headway pre"></i>
+						<i class="iconfont icon-zanting2 pause"></i>
+						<i class="iconfont icon-headway1 next"></i>
+					</p>
+					<p>
+						<i class="iconfont icon-suiji randomPlay"></i>
+						<i class="iconfont icon-shuaxin1 refresh"></i>
+						<i class="iconfont icon-yinliang voice"></i>
+					</p>
+					<div class="volume">
+						<span class="volumeChange">
+							<span class="percent">20%</span>
+						</span>
+						<span class="colorVolume"></span>
+					</div>
+				</div>
+				
+				<div class="playTime">
+					<div class="timeNum">
+						<!--00:00/00:00-->
+						<span class="cur"><i>0</i><i>0</i><i>:</i><i>0</i><i>0</i></span>/
+						<span class="all"><i>0</i><i>0</i><i>:</i><i>0</i><i>0</i></span>
+					</div>
+					<div class="timeLine">
+						<div class="colorTimeLine"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="songsList">
+			<ul>
+				<li>
+					<h3>浅唱</h3>
+					<span>许嵩专题:Vae珍藏集合</span>
+				</li>
+			
+				<li>
+					<h3>庐州月</h3>
+					<span>许嵩专题:Vae珍藏集合</span>
+				</li>
+			
+				<li>
+					<h3>千古</h3>
+					<span>许嵩专题:Vae珍藏集合</span>
+				</li>
+			
+				<li>
+					<h3>认错</h3>
+					<span>许嵩专题:Vae珍藏集合</span>
+				</li>
+			
+			</ul>
+		</div>
+		<video loop id="player" src="vae/许嵩 - 浅唱.mp3"></video>
+	</body>
+	
+</html>
